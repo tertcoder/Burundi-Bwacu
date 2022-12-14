@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    /* background: rgb(13, 21, 34); */
+    
+}
+
+i {
+    margin-right: 3px;
+}
+
+/*TODO: Styling the header*/
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.headcontain {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.paddingMe {
+    padding-inline-start: 4rem;
+}
+
+.dividerline {
+    width: 100%;
+    border-top: 1px solid rgba(15, 22, 36, 0.336);
+}
+.helloBurundi {
+    padding-block: 0.25rem;
+    display: flex;
+}
+.helloBurundi h1 {
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+.meDev p{
+    margin-block-start: 0.5rem;
+    font-weight: lighter;
+    font-size: 0.75rem;
+}
+
+.meDev p a {
+    text-decoration: underline;
+    font-weight: 500;
+    color: inherit;
+}
+
+/*TODO: Styling first section*/
+section {
+    padding-inline: 4rem;
+}
+.descriptive {
+    padding-block-start: 4.2rem;
+}
+.descriptive h2 {
+    width: 13rem;
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+    transform: translateX(-0.75rem);
+}
+
+.descriptive h2:hover {
+    transform: none;
+}
+
+.descriptive article {
+    width: 100%;
+    max-width: 50rem;
+    font-weight: lighter;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.descriptive h2 .hideme{
+    font-size: 1rem;
+    color:rgba(0, 0, 0, 0.579);
+    transition: all 0.5s;
+    opacity: 0;
+    
+}
+
+.descriptive h2:hover .hideme {
+    opacity: 1;
+}
+
+.learnMore {
+    margin-block: 4rem;
+}
+
+.learnMore a {
+    color: #787878;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+/*TODO: Styling second section*/
+.moreInfo {
+    padding: 5rem 4rem;
+    background-color: #F9F9F9;
+}
+.gridInfo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+    gap: 5rem;
+
+}
+.item {
+    /* text-align: center; */
+    /* display: grid; */
+}
+.item h3, .bdimotto h3, .anthem h3 {
+    margin-bottom: 1rem;
+}
+.item img {
+    width: 100%;
+    /* justify-self: flex-end; */
+}
+
+.bdimotto, .anthem {
+    margin-top: 2rem;
+}
+
+.bdimotto p, .anthem p, .oInfo p {
+    font-weight: lighter;
+    font-size: 0.95rem;
+}
+/* .gridInfo:nth-child(2) {
+    gap: 5rem;
+} */
+
+
+/*TODO: styling the third section */
+.otherImportant {
+    padding: 5rem 4rem;
+}
+
+.gridOther {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+.oInfo h3 {
+    margin-bottom: 0.75rem;
+}
+.par {
+    translate: 1rem 0;
+}
+
+/*TODO: Styling Footer*/
+footer {
+    padding: 2rem 0 0 0;
+    background-color: #F9F9F9;
+}
+.footercontent {
+    width: 100%;
+    font-size: 0.5rem;
+    text-align: center;
+    font-weight: lighter;
+}
+.bye {
+    margin-block: 1rem;
+}
+
+.moreaboutbdi a, .bye a {
+    text-decoration: underline;
+    font-weight: 500;
+    color: inherit;
+}
+
+/** Media Queries */
+@media screen and (max-width: 810px) {
+    .gridInfo {
+        gap: 2rem;
+    }
+    .gridInfo:nth-child(2) {
+        gap: 0.75rem;
+    }
+    
+    
+}
+
+
